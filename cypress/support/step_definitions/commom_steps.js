@@ -19,3 +19,7 @@ Given("I click in button {string}", function (selector) {
 Given("I expect to see the message {string}", function (string) {
     cy.contains(string);
  });
+
+ Then("I should return to homepage", function () {
+    cy.url().should('eq', 'https://computer-database.gatling.io/computers');
+  });

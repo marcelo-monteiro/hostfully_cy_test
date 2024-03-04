@@ -37,3 +37,11 @@ Feature: Add New Computer to Database
   Scenario: Attempting to add a new computer with empty data in all fields
     When I click in button "buttonCreateThisComputer"
     Then I expect to see the message "Failed to refine type : Predicate isEmpty() did not fail."
+
+  Scenario: Cancelling the action to add a new computer
+    When I enter "MacBook Pro M1" in the "inputComputerName" field
+    And I enter "2021-01-01" in the "inputIntroducedDate" field
+    And I enter "2024-01-01" in the "inputDiscontinuedDate" field
+    And I select "Apple Inc." from the "companyDropdown" dropdown
+    And I click in button "buttonCancel"
+    Then I should return to homepage
