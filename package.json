@@ -7,8 +7,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^13.1.0",
     "@cypress/browserify-preprocessor": "^3.0.2",
     "@shelex/cypress-allure-plugin": "^2.34.0",
-    "cypress": "^13.6.6",
-    "typescript": "^5.3.3",
+    "cypress": "^11.0.0",
     "yamljs": "^0.3.0"
   }
 }

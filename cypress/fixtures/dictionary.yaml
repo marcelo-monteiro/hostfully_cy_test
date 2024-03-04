@@ -1,6 +1,14 @@
 # Computer Page Elements
 
+buttonAddNewComputer: '#add'
 
 
 # Add Computer Page Elements
 
+inputComputerName: '#name'
+inputIntroducedDate: '#introduced'
+inputDiscontinuedDate: '#discontinued'
+companyDropdown: '#company'
+companyOption: '#company > option:nth-child(2)'
+buttonCreateThisComputer: '#main > form > div > input'
+buttonCancel: '#main > form > div > a'
